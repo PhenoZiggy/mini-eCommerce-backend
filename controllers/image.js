@@ -31,13 +31,13 @@ export const uploadImage = async (req, res) => {
       )
         .then((result) => {
           res.status(201).json({
-            message: "File uploaded!",
+            message: "uploaded!",
             result: result._id,
           });
         })
         .catch((err) => {
           res.status(500).json({
-            message: "Error uploading file",
+            message: "Error uploading",
             error: err,
           });
         });
@@ -57,7 +57,7 @@ export const getUploadedImage = async (req, res) => {
     })
     .catch((err) => {
       res.status(500).json({
-        message: "Error loading file",
+        message: "Error loading",
         error: err,
       });
     });

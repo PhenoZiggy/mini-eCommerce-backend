@@ -11,7 +11,7 @@ const productSchema = new Schema(
     },
     Name: {
       type: String,
-      trim: true, // remove whitespace
+      trim: true,
       required: true,
     },
     QTY: {
@@ -20,13 +20,13 @@ const productSchema = new Schema(
     },
     Description: {
       type: String,
-      trim: true, // remove whitespace
+      trim: true, 
       required: false,
     },
     ImageIDs: {
       type: Array,
     },
-    //selected Image ID
+   
     selectedImage: {
       type: String,
       required: false,
