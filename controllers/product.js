@@ -7,14 +7,14 @@ export const addProduct = async (req, res) => {
     .then((product) => {
       return res.status(200).json({
         success: true,
-        message: "Product added successfully",
+        message: "Product inserted",
         product: product,
       });
     })
     .catch((err) => {
       return res.status(500).json({
         success: false,
-        message: "SKU ID already exists",
+        message: "SKU exists",
         error: err,
       });
     });
@@ -25,14 +25,14 @@ export const getAllProducts = async (req, res) => {
     .then((products) => {
       return res.status(200).json({
         success: true,
-        message: "Products retrieved successfully",
+        message: "Products retrieved",
         products: products,
       });
     })
     .catch((err) => {
       return res.status(500).json({
         success: false,
-        message: "Error retrieving products",
+        message: "Error",
         error: err,
       });
     });
@@ -45,14 +45,14 @@ export const deleteProduct = async (req, res) => {
     .then((product) => {
       return res.status(200).json({
         success: true,
-        message: "Product deleted successfully",
+        message: "Product deleted",
         product: product,
       });
     })
     .catch((err) => {
       return res.status(500).json({
         success: false,
-        message: "Error deleting product",
+        message: "Error",
         error: err,
       });
     });
@@ -65,14 +65,14 @@ export const singleProduct = async (req, res) => {
     .then((product) => {
       return res.status(200).json({
         success: true,
-        message: "Product retrieved successfully",
+        message: "Product retrieved",
         product: product,
       });
     })
     .catch((err) => {
       return res.status(500).json({
         success: false,
-        message: "Error retrieving product",
+        message: "Error",
         error: err,
       });
     });
@@ -85,14 +85,14 @@ export const updateProduct = async (req, res) => {
     .then((product) => {
       return res.status(200).json({
         success: true,
-        message: "Product updated successfully",
+        message: "Product updated",
         product: product,
       });
     })
     .catch((err) => {
       return res.status(500).json({
         success: false,
-        message: "Error updating product",
+        message: "Error updating items",
         error: err,
       });
     });
